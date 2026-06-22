@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Download } from "lucide-react";
-import { STORE_URL } from "../config";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -38,11 +37,14 @@ export default function Navbar() {
           <a href="#testimonials" className="text-sm text-text-secondary hover:text-white transition-colors">
             Reviews
           </a>
+          <a href="#install" className="text-sm text-text-secondary hover:text-white transition-colors">
+            Install
+          </a>
           <a href="#faq" className="text-sm text-text-secondary hover:text-white transition-colors">
             FAQ
           </a>
           <a
-            href={STORE_URL}
+            href="#install"
             className="gradient-btn text-sm font-medium px-5 py-2.5 rounded-lg text-white inline-flex items-center gap-2"
           >
             <Download className="w-4 h-4" />
@@ -64,8 +66,9 @@ export default function Navbar() {
           <a href="#features" className="text-sm text-text-secondary" onClick={() => setMobileOpen(false)}>Features</a>
           <a href="#how-it-works" className="text-sm text-text-secondary" onClick={() => setMobileOpen(false)}>How It Works</a>
           <a href="#testimonials" className="text-sm text-text-secondary" onClick={() => setMobileOpen(false)}>Reviews</a>
+          <a href="#install" className="text-sm text-text-secondary" onClick={() => setMobileOpen(false)}>Install</a>
           <a href="#faq" className="text-sm text-text-secondary" onClick={() => setMobileOpen(false)}>FAQ</a>
-          <a href={STORE_URL} className="gradient-btn text-sm font-medium px-5 py-2.5 rounded-lg text-white text-center">
+          <a href="#install" className="gradient-btn text-sm font-medium px-5 py-2.5 rounded-lg text-white text-center">
             Add to Chrome
           </a>
         </div>

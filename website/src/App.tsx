@@ -4,6 +4,7 @@ import TrustMetrics from "./components/TrustMetrics";
 import FeatureSection from "./components/FeatureSection";
 import HowItWorks from "./components/HowItWorks";
 import Testimonials from "./components/Testimonials";
+import InstallGuide from "./components/InstallGuide";
 import FAQ from "./components/FAQ";
 import FooterCTA from "./components/FooterCTA";
 import Footer from "./components/Footer";
@@ -95,6 +96,7 @@ export default function App() {
         </div>
 
         <HowItWorks />
+        <InstallGuide />
         <Testimonials />
         <FAQ />
         <FooterCTA />

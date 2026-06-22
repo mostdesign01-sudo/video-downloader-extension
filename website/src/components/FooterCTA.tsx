@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Chrome, ArrowRight } from "lucide-react";
-import { STORE_URL } from "../config";
 
 export default function FooterCTA() {
   return (
@@ -23,7 +22,7 @@ export default function FooterCTA() {
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href={STORE_URL}
+            href="#install"
             className="gradient-btn text-base font-semibold px-8 py-3.5 rounded-xl text-white inline-flex items-center gap-2.5 shadow-lg shadow-brand-500/25"
           >
             <Chrome className="w-5 h-5" />
